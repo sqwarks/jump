@@ -1,10 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://cj2be4hlxs7gl"]
+[gd_scene load_steps=14 format=3 uid="uid://cj2be4hlxs7gl"]
 
 [ext_resource type="Texture2D" uid="uid://vkhqbhnm7ll8" path="res://icon.svg" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://dglg7d55jhh8u" path="res://coin.gd" id="2_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://ltk7w1aludbx" path="res://grassjumpstart.png" id="2_272bh"]
 [ext_resource type="Script" uid="uid://c6l5rttn24y0y" path="res://player.gd" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://dhhld32jr0ygc" path="res://label.gd" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://dhepyb6qxe020" path="res://godot child.png" id="4_5vw27"]
 [ext_resource type="Script" uid="uid://cnutxiby25co2" path="res://text.gd" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://dduwdv8ysrju0" path="res://Sprite-0001.png" id="8_5vw27"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("1_0xm2m")
@@ -142,7 +145,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_1bvp3")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
-size = Vector2(121, 121)
+size = Vector2(120.5, 121.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
 size = Vector2(127, 116)
@@ -166,8 +169,9 @@ tile_set = SubResource("TileSet_lquwl")
 position = Vector2(0, -4)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.9999981, -3.8146973e-06)
+scale = Vector2(7.4999995, 7.4999995)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D"]
 position = Vector2(0, -1)
@@ -177,8 +181,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-125, -3)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-1.0000019, -0.49999428)
+scale = Vector2(7.5000005, 7.5625005)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2"]
 position = Vector2(0, -1)
@@ -188,8 +193,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-122, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-3.8146973e-06, -0.4999981)
+scale = Vector2(7.5000005, 7.4375005)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D"]
 position = Vector2(0, -1)
@@ -199,8 +205,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-120, -2)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(1.1444092e-05, -1.0000038)
+scale = Vector2(7.4999986, 7.6249995)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -210,8 +217,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-2, -129)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(1.0000038, 0)
+scale = Vector2(7.4999995, 7.625)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -221,8 +229,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-3, -130)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.5, 0)
+scale = Vector2(7.3125, 7.5)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -232,8 +241,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-128, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.50001144, -0.4999981)
+scale = Vector2(7.4375014, 7.5625)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -243,8 +253,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(748, 256)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0, -0.49999428)
+scale = Vector2(7.5, 7.5625005)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -254,8 +265,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(2, -133)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(5.722046e-06, -0.9999981)
+scale = Vector2(7.4999995, 7.625)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -265,8 +277,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-2, -126)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.5000019, -0.9999981)
+scale = Vector2(7.3125, 7.625)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -276,8 +289,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(126, -3)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-3.8146973e-06, -1.4999981)
+scale = Vector2(7.5000005, 7.5625)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -287,8 +301,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(122, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(1.0000038, -1.0000038)
+scale = Vector2(7.4999995, 7.6249995)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -298,8 +313,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(131, -5)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-1.7166132e-05, -1.4999986)
+scale = Vector2(7.500002, 7.5625)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -309,8 +325,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(242, -267)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-7.6293945e-06, -0.9999943)
+scale = Vector2(7.499997, 7.5)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -320,8 +337,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(125, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.5000076, -1.4999981)
+scale = Vector2(7.437499, 7.5625)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -331,8 +349,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(122, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.5000076, -0.49999046)
+scale = Vector2(7.437499, 7.4375014)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -342,8 +361,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(125, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-2.2888184e-05, -0.49999428)
+scale = Vector2(7.250003, 7.5625005)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -353,8 +373,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(459, -120)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.49999237, -1.1444092e-05)
+scale = Vector2(7.562501, 7.6249986)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -364,8 +385,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(130, 4)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.49999237, -0.9999943)
+scale = Vector2(7.562501, 7.500001)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -375,8 +397,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(127, -6)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.50001144, -2.000002)
+scale = Vector2(7.4375014, 7.4999995)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -386,8 +409,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-701, -299)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.49999428, 1.9073486e-06)
+scale = Vector2(7.562501, 7.6250005)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -397,8 +421,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-129, -6)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-1.0000267, -2.000023)
+scale = Vector2(7.6250033, 7.624997)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -408,8 +433,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-132, -3)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.50001526, -0.50001144)
+scale = Vector2(7.562502, 7.5624986)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -419,8 +445,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-129, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-1.0000076, -0.49997902)
+scale = Vector2(7.375001, 7.562503)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -430,8 +457,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-331, -228)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.50001144, -0.49999237)
+scale = Vector2(7.6874986, 7.687501)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -441,8 +469,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-124, 2)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.9999924, -0.99996185)
+scale = Vector2(7.750001, 7.375005)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -452,8 +481,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-132, 2)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.49999428, -0.49995804)
+scale = Vector2(7.437499, 7.4375052)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -463,8 +493,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-124, 2)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.9999981, 1.1444092e-05)
+scale = Vector2(7.4999995, 7.5000014)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -474,8 +505,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-170, -298)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(3.8146973e-06, -0.9999943)
+scale = Vector2(7.4999995, 7.500001)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -485,8 +517,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(3, -125)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.4999981, -0.49995804)
+scale = Vector2(7.4375, 7.4375052)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -496,8 +529,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(349, -348)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(3.8146973e-06, -1.000042)
+scale = Vector2(7.4999995, 7.6249948)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -507,8 +541,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(593, -273)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.5000076, -0.9999943)
+scale = Vector2(7.437499, 7.500001)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -518,8 +553,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(807, -185)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(2.861023e-05, -0.49991608)
+scale = Vector2(7.499996, 7.5625105)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -529,8 +565,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(767, -224)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.4999256, -1.9998932)
+scale = Vector2(7.5625095, 7.6250134)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -540,8 +577,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(899, -340)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.4999733, -1.5000305)
+scale = Vector2(7.4375033, 7.562496)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -551,8 +589,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(630, -248)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.4999733, 0)
+scale = Vector2(7.4375033, 7.375)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -562,8 +601,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(115, 7)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.50006104, -0.50004196)
+scale = Vector2(7.5624924, 7.5624948)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -573,8 +613,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(130, -2)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(3.0517578e-05, -0.500021)
+scale = Vector2(7.374996, 7.437497)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -584,8 +625,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-4916, 2965)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.50001144, -0.9999943)
+scale = Vector2(7.4375014, 7.500001)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/TileMapLayer/StaticBody2D2/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -595,8 +637,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-149, -6)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0, -1.5000019)
+scale = Vector2(7.75, 7.3125)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D"]
 position = Vector2(0, -1)
@@ -606,8 +649,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-1271, 127)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(2.861023e-05, -0.9999943)
+scale = Vector2(7.499996, 7.500001)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -617,8 +661,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-878, 721)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.49996328, -1.0000114)
+scale = Vector2(7.562495, 7.6249986)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -628,8 +673,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-679, 651)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(9.536743e-05, -0.50004196)
+scale = Vector2(7.499988, 7.5624948)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -639,8 +685,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-939, -456)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(8.392334e-05, -0.9999943)
+scale = Vector2(7.6249895, 7.500001)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -650,8 +697,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-905, -312)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.49991608, -1.0000267)
+scale = Vector2(7.5624895, 7.4999967)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -661,8 +709,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-462, -165)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-1.000061, -0.9999943)
+scale = Vector2(7.6250076, 7.500001)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -672,8 +721,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-149, -6)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-3.8146973e-05, -1.9999905)
+scale = Vector2(7.500005, 7.625001)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -683,8 +733,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-348, 1083)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-3.8146973e-05, -0.49995804)
+scale = Vector2(7.500005, 7.4375052)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -694,8 +745,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(4460, -2195)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-1.9073486e-06, -2.000002)
+scale = Vector2(7.3750005, 7.4999995)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -705,8 +757,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-391, -424)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-1.0000515, -0.9999943)
+scale = Vector2(7.5000067, 7.500001)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -716,8 +769,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-459, -364)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(1.5258789e-05, -1.4999657)
+scale = Vector2(7.624998, 7.5625043)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -727,8 +781,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-473, -374)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.4999733, -0.9999943)
+scale = Vector2(7.4375033, 7.500001)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -738,8 +793,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-434, -470)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.5000496, -0.500021)
+scale = Vector2(7.562506, 7.437497)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -749,8 +805,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-455, -440)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-0.4999447, -1.5000305)
+scale = Vector2(7.4374933, 7.562496)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -760,8 +817,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-515, -470)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-4.196167e-05, -0.9998417)
+scale = Vector2(7.5000014, 7.6250067)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -771,8 +829,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-482, -403)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(3.0517578e-05, -0.99993134)
+scale = Vector2(7.374996, 7.5000086)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -782,19 +841,21 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-192, 2423)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-1.0001373, 0.49998856)
+scale = Vector2(7.375017, 7.6874986)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(0, -1)
+position = Vector2(0.25, -0.75)
 shape = SubResource("RectangleShape2D_7mycd")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(5259, 1671)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.5000076, -1.0000038)
+scale = Vector2(7.437499, 7.5000005)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -804,8 +865,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(500, 576)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.50004005, -1.5000305)
+scale = Vector2(7.437495, 7.562496)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -815,8 +877,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(581, 607)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.50004005, -0.99996185)
+scale = Vector2(7.437495, 7.375005)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -826,8 +889,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(581, 607)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(-3.8146973e-05, 0.49998283)
+scale = Vector2(7.500005, 7.562498)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -837,8 +901,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(581, 607)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(9.536743e-05, -1.4999027)
+scale = Vector2(7.499988, 7.5625124)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -848,8 +913,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(625, 946)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(9.536743e-05, -1.0000572)
+scale = Vector2(7.499988, 7.499993)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -859,8 +925,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(820, 24)
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
-position = Vector2(-2, -3)
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.4999733, -2.670288e-05)
+scale = Vector2(7.4375033, 7.6249967)
+texture = ExtResource("2_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node/TileMapLayer/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D/StaticBody2D"]
 position = Vector2(0, -1)
@@ -875,7 +942,9 @@ position = Vector2(0.5, -1)
 shape = SubResource("RectangleShape2D_lquwl")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/coin"]
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.49992752, -1.0000267)
+scale = Vector2(7.687509, 7.0000033)
+texture = ExtResource("4_5vw27")
 
 [node name="coin2" type="Area2D" parent="Node"]
 position = Vector2(-5570, 1654)
@@ -886,7 +955,9 @@ position = Vector2(0.5, -1)
 shape = SubResource("RectangleShape2D_lquwl")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/coin2"]
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.49988174, -7.6293945e-06)
+scale = Vector2(7.812515, 7.250001)
+texture = ExtResource("4_5vw27")
 
 [node name="coin3" type="Area2D" parent="Node"]
 position = Vector2(-4509, -1055)
@@ -897,7 +968,9 @@ position = Vector2(0.5, -1)
 shape = SubResource("RectangleShape2D_lquwl")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/coin3"]
-texture = ExtResource("1_0xm2m")
+position = Vector2(0.49998474, -1)
+scale = Vector2(7.937502, 7.25)
+texture = ExtResource("4_5vw27")
 
 [node name="coin4" type="Area2D" parent="Node"]
 position = Vector2(4456, 4001)
@@ -908,28 +981,9 @@ position = Vector2(0.5, -1)
 shape = SubResource("RectangleShape2D_lquwl")
 
 [node name="Sprite2D" type="Sprite2D" parent="Node/coin4"]
-texture = ExtResource("1_0xm2m")
-
-[node name="player" type="CharacterBody2D" parent="." groups=["player"]]
-position = Vector2(0, 4)
-script = ExtResource("2_h2yge")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-position = Vector2(3, -4)
-shape = SubResource("RectangleShape2D_272bh")
-
-[node name="Sprite2D" type="Sprite2D" parent="player"]
-position = Vector2(-3, -1)
-texture = ExtResource("1_0xm2m")
-
-[node name="Camera2D" type="Camera2D" parent="player"]
-
-[node name="Label" type="Label" parent="player"]
-offset_left = -23.0
-offset_top = -107.0
-offset_right = 17.0
-offset_bottom = -84.0
-script = ExtResource("4_1bvp3")
+position = Vector2(0.5000944, -4.386902e-05)
+scale = Vector2(7.8124948, 7.25)
+texture = ExtResource("4_5vw27")
 
 [node name="Label" type="Label" parent="."]
 offset_left = -349.0
@@ -937,3 +991,31 @@ offset_top = -315.0
 offset_right = 29.0
 offset_bottom = -80.0
 script = ExtResource("5_lquwl")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -6482.0
+offset_top = -5177.0
+offset_right = 6069.0
+offset_bottom = 5197.0
+texture = ExtResource("8_5vw27")
+
+[node name="player" type="CharacterBody2D" parent="TextureRect" groups=["player"]]
+position = Vector2(6482, 5181)
+script = ExtResource("2_h2yge")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextureRect/player"]
+position = Vector2(3, -4)
+shape = SubResource("RectangleShape2D_272bh")
+
+[node name="Sprite2D" type="Sprite2D" parent="TextureRect/player"]
+position = Vector2(-3, -1)
+texture = ExtResource("1_0xm2m")
+
+[node name="Camera2D" type="Camera2D" parent="TextureRect/player"]
+
+[node name="Label" type="Label" parent="TextureRect/player"]
+offset_left = -23.0
+offset_top = -107.0
+offset_right = 17.0
+offset_bottom = -84.0
+script = ExtResource("4_1bvp3")
